@@ -11,6 +11,7 @@
   <title>National Park Service</title>
 
   <!-- Bootstrap core CSS -->
+  <!-- Look at http://flask.pocoo.org/docs/1.0/patterns/templateinheritance/ to share css/javascript between pages -->
   <link href="{{url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
@@ -32,7 +33,7 @@
           <div class="masthead-content text-white py-5 py-md-0">
             <h1 class="mb-3">National Park Service Search</h1>
             <p class="mb-5">Use name, state, designation, and keyword filters to find your desired destination, as well as nearby visitor centers, campgrounds, events, etc!</p>
-            <form>
+            <form action="/" method="post">
               <div class="input-group input-group-newsletter">
                 <input type="text" class="form-control" placeholder="Arcadia, Yosemite, Grand Canyon, etc." id="name">
                 <div class="input-group-append">
@@ -41,7 +42,7 @@
               </div>
               <br>
               <div class="input-group input-group-newsletter">
-                <input type="text" class="form-control" placeholder="CA, NJ, MD, etc." aria-label="State" aria-describedby="basic-addon">
+                <input type="text" class="form-control" placeholder="CA, NJ, MD, etc." name="state" aria-label="State" aria-describedby="basic-addon">
                 <div class="input-group-append">
                   <button class="btn btn-secondary" type="button">State</button>
                 </div>
@@ -62,7 +63,7 @@
               </div>
               <br>
               <div class="input-group-append">
-                <button class="btn btn-secondary" type="button">Submit</button>
+                <input type="submit" class="btn btn-secondary"></input>
               </div>
             </form>
           </div>
