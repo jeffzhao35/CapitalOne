@@ -6,6 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def home():
 	if request.method == 'POST':
+		park_name = request.form['park_name']
 		state = request.form['state']
 		return redirect(url_for('results', state=state))
 	else:
