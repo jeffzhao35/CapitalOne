@@ -11,7 +11,7 @@
 body {
   height: 100%;
   min-height: 35rem;
-  position: relative;
+  position: fixed;
   font-family: 'Source Sans Pro';
   font-weight: 300;
   background: url("https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg") #002E66 no-repeat center center scroll;
@@ -128,14 +128,45 @@ h6 {
 }
 
 .table {
-  width: 50%;
+  width: 100%;
   border: 2px solid #1f1f14;
   background-color: #002E66;
-  height: 75%;
-  border-radius: 5%;
+  height: 70%;
+  position: sticky;
   opacity: .7;
-  position: fixed;
-  margin-left: 25%;
-  margin-top: 6%;
-
 }
+
+.my-custom-scrollbar {
+position: fixed;
+height: 70%;
+margin-top: 6%;
+margin-left: 21%;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+
+th {
+  border-bottom: 1px solid #1f1f14;
+  color: white;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: left;
+}
+
+td {
+  font-weight: 600;
+  color: white;
+  padding: 0.5em 1em;
+  text-align: left;
+  border-bottom: 1px solid #808080;
+}
+
+tbody tr:hover {
+  background: #385169;
+  cursor: pointer;
+  opacity: .9;
+}
+

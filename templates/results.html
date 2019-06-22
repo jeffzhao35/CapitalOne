@@ -22,12 +22,17 @@
 
 <body>
 
-  <div>
+  <div class="table-wrapper-scroll-y my-custom-scrollbar">
     <table class="table">
       <tbody>
-        {% for i in parks %}
         <tr>
-          <td>{{ i['fullName'] }}, {{ i['states']}}</td>
+          <th>Name</th>
+          <th>State(s)</th>
+        </tr>
+        {% for i in parks %}
+        <tr onclick="window.document.location='{{i.url}}';">
+          <td>{{ i['fullName'] }}</td>
+          <td>{{ i['states']}}</td>
         </tr>
         {% endfor %}
       </tbody>
