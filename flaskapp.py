@@ -7,7 +7,6 @@ app = Flask(__name__)
 def home():
 	if request.method == 'POST':
 		park_name = request.form['park_name']
-		print(park_name)
 		state = request.form['state']
 		designation = request.form['designation']
 		keyword = request.form['keyword']
