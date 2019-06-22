@@ -14,7 +14,7 @@ body {
   position: relative;
   font-family: 'Source Sans Pro';
   font-weight: 300;
-  background: url("../img/park.jpg") #002E66 no-repeat center center scroll;
+  background: url("https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg") #002E66 no-repeat center center scroll;
   background-size: cover;
 }
 
@@ -30,7 +30,7 @@ h6 {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../img/park.jpg") #002E66 no-repeat center center scroll;
+    background: url("https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/59-parks-52-weeks/north-cascades/north-cascades-national-park-picture-lake-mount-shuksan.jpg") #002E66 no-repeat center center scroll;
     background-position: cover;
   }
   body video {
@@ -79,7 +79,7 @@ h6 {
   padding: 1rem;
 }
 
-.masthead .masthead-content .input-group-newsletter button {
+.masthead .masthead-content .input-group-newsletter label {
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -110,70 +110,6 @@ h6 {
   }
   .masthead .masthead-content p {
     font-size: 1.3rem;
-  }
-}
-
-.social-icons {
-  position: absolute;
-  margin-bottom: 2rem;
-  width: 100%;
-  z-index: 2;
-}
-
-.social-icons ul {
-  margin-top: 2rem;
-  width: 100%;
-  text-align: center;
-}
-
-.social-icons ul > li {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  display: inline-block;
-}
-
-.social-icons ul > li > a {
-  display: block;
-  color: white;
-  background-color: rgba(0, 46, 102, 0.8);
-  border-radius: 100%;
-  font-size: 2rem;
-  line-height: 4rem;
-  height: 4rem;
-  width: 4rem;
-}
-
-@media (min-width: 768px) {
-  .social-icons {
-    margin: 0;
-    position: absolute;
-    right: 2.5rem;
-    bottom: 2rem;
-    width: auto;
-  }
-  .social-icons ul {
-    margin-top: 0;
-    width: auto;
-  }
-  .social-icons ul > li {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-  .social-icons ul > li:last-child {
-    margin-bottom: 0;
-  }
-  .social-icons ul > li > a {
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    font-size: 2rem;
-    line-height: 4rem;
-    height: 4rem;
-    width: 4rem;
-  }
-  .social-icons ul > li > a:hover {
-    background-color: #002E66;
   }
 }
 

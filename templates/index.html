@@ -17,10 +17,11 @@
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link href="{{url_for('static', filename='all.min.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='style.css')}}" type="text/css" rel="stylesheet">
 
 </head>
 
@@ -35,30 +36,30 @@
             <p class="mb-5">Use name, state, designation, and keyword filters to find your desired destination, as well as nearby visitor centers, campgrounds, events, etc!</p>
             <form action="/" method="post">
               <div class="input-group input-group-newsletter">
-                <input type="text" class="form-control" placeholder="Arcadia, Yosemite, Grand Canyon, etc." id="name">
+                <input type="text" class="form-control" placeholder="Arcadia, Yosemite, Grand Canyon, etc." name="park_name">
                 <div class="input-group-append">
                   <button class="btn btn-secondary" type="button" disabled>Name</button>
                 </div>
               </div>
               <br>
               <div class="input-group input-group-newsletter">
-                <input type="text" class="form-control" placeholder="CA, NJ, MD, etc." name="state" aria-label="State" aria-describedby="basic-addon">
+                <input type="text" class="form-control" placeholder="CA, NJ, MD, etc." name="state">
                 <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">State</button>
+                  <button class="btn btn-secondary" type="button" disabled>State</button>
                 </div>
               </div>
               <br>
               <div class="input-group input-group-newsletter">
-                <input type="text" class="form-control" placeholder="National Park, National Monument, National Preserve, etc." aria-label="Designation" aria-describedby="basic-addon">
+                <input type="text" class="form-control" placeholder="National Park, National Preserve, etc." name="designation">
                 <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">Designation</button>
+                  <button class="btn btn-secondary" type="button" disabled>Designation</button>
                 </div>
               </div>
               <br>
               <div class="input-group input-group-newsletter">
-                <input type="text" class="form-control" placeholder="Sequoias, coyotes, desert, etc." aria-label="Designation" aria-describedby="basic-addon">
+                <input type="text" class="form-control" placeholder="Sequoias, coyotes, desert, etc." name="keyword">
                 <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">Keyword</button>
+                  <button class="btn btn-secondary" type="button" disabled>Keyword</button>
                 </div>
               </div>
               <br>
@@ -72,32 +73,14 @@
     </div>
   </div>
 
-  <div class="social-icons">
-    <ul class="list-unstyled text-center mb-0">
-      <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-      </li>
-      <li class="list-unstyled-item">
-        <a href="#">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="{{url_for('static', filename='jquery.min.js')}}"></script>
+
+  <script src="{{url_for('static', filename='bootstrap.bundle.min.js')}}"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/style.min.js"></script>
+  <script src="{{url_for('static', filename='js/coming-soon.min.js')}}"></script>
 
 </body>
 
