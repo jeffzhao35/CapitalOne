@@ -18,4 +18,5 @@ First if using python 2.7 or lower install the virtualenv package and setup a vi
 ## Steps to run app:
 
 Run flaskapp.py file
+
 Navigate to 127.0.0.1:5000
