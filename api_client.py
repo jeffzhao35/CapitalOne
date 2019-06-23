@@ -7,6 +7,7 @@ BASE_URL = "https://developer.nps.gov/api/v1/"
 class ApiClient:
 	def parks(park_name, state, designation, keyword):
 		params={'api_key':API_KEY, 'limit':'50'}
+		# validates whether or not user entered specific query field
 		if park_name:
 			params['parkCode'] = park_name
 		if state:
@@ -15,5 +16,6 @@ class ApiClient:
 			params['q'] = designation
 		if keyword:
 			params['q'] = keyword
+		# builds the url with querying information
 		response = requests.get(BASE_URL + "parks", params=params)
 		return response.json()['data']
