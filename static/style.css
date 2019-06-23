@@ -128,10 +128,10 @@ h6 {
 }
 
 .table {
-  width: 100%;
+  width: 900px;
   border: 2px solid #1f1f14;
   background-color: #002E66;
-  height: 70%;
+  height: auto;
   position: sticky;
   opacity: .7;
 }
@@ -139,7 +139,7 @@ h6 {
 .my-custom-scrollbar {
 position: fixed;
 height: 70%;
-margin-top: 6%;
+margin-top: 5%;
 margin-left: 21%;
 overflow: auto;
 }
