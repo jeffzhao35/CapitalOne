@@ -1,5 +1,6 @@
 # National Park Service Search Engine
 The National Park Service Search Engine:
+
 -Provides tools to assist users in finding specific information, such as state and designation filtering, name and keyword search.
 
 -Lists details about specific visitor centers, as well as nearby campgrounds.
